@@ -1,0 +1,78 @@
+﻿<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+          integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+            integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    #map {
+        height: 100%;
+    }
+</style>
+
+
+<script>
+
+    // A $( document ).ready() block.
+    $(document).ready(function () {
+        console.log("ready!");
+
+
+        var map = L.map('map').setView([55.505, 5.7], 16);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        $('.leaflet-control-attribution').hide()
+
+        var myLayer = L.geoJSON().addTo(map);
+
+        $.getJSON('https://localhost:7278/vehicles', function (data) {
+            console.log(data.features);
+            console.log("does this even work?!?!?")
+
+            data.features.forEach(function(element){
+                myLayer.addData(element);
+            })
+
+            var x = data.features[data.features.length-1].geometry.coordinates[1];
+            var y = data.features[data.features.length-1].geometry.coordinates[0];
+
+            console.log(x);
+
+
+            map.panTo(new L.LatLng(x,y));
+
+
+        }   );
+
+
+
+        map.on("moveend", function () {
+        console.log(map.getCenter().toString());
+        });
+
+
+    });
+
+
+</script>
+
+
+<body>
+    TEST
+    <div id="map"></div>
+    test2
+</body>
+
+
+
+</html>

@@ -1,0 +1,12 @@
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\bin\Debug\net6.0\KolumbusRouteApi.deps.json
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\bin\Debug\net6.0\KolumbusRouteApi.dll
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\bin\Debug\net6.0\KolumbusRouteApi.pdb
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\KolumbusRouteApi.csproj.AssemblyReference.cache
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\KolumbusRouteApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\KolumbusRouteApi.AssemblyInfoInputs.cache
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\KolumbusRouteApi.AssemblyInfo.cs
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\KolumbusRouteApi.csproj.CoreCompileInputs.cache
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\KolumbusRouteApi.dll
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\refint\KolumbusRouteApi.dll
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\KolumbusRouteApi.pdb
+C:\Users\JoepLijnen\source\repos\Reiseplanner_Hackathon\KolumbusRouteApi\obj\Debug\net6.0\ref\KolumbusRouteApi.dll
